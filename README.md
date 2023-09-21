@@ -3,17 +3,17 @@
 This project focuses on classifying emails and SMS messages into spam and non-spam (ham) categories using machine learning techniques. It involves data cleaning, exploratory data analysis (EDA), data preprocessing, and model building to create an effective spam classifier.
 
 # Project Steps
-1. Data Loading
+# 1. Data Loading
 The dataset was obtained from Kaggle and served as the foundation of this project.
 
-3. Data Cleaning
+# 2. Data Cleaning
 Irrelevant columns were dropped from the dataset, and the remaining columns were renamed for clarity.
 
 Label encoding was applied to the target variable to convert it into numerical values.
 
 Null and duplicated values were checked and handled, with duplicate rows being kept only once.
 
-5. Exploratory Data Analysis (EDA)
+# 3. Exploratory Data Analysis (EDA)
 The dataset was examined to identify any imbalances between spam and ham categories.
 
 NLTK was imported to perform Natural Language Processing (NLP) tasks.
@@ -24,7 +24,7 @@ Tokenization of words and sentences was performed to facilitate analysis.
 
 Differences between spam and ham messages were explored using descriptive statistics.
 
-7. Data Preprocessing
+# 4. Data Preprocessing
 Stopwords were downloaded from the NLTK library and used to filter out common, uninformative words.
 
 Text was converted to lowercase, tokenized, and special characters were removed.
@@ -33,7 +33,7 @@ Stemming was applied to ensure uniformity of words.
 
 The preprocessed text was stored in a new feature called "transformed_text."
 
-9. Model Building
+# 5. Model Building
 TF-IDF (Term Frequency-Inverse Document Frequency) vectorization was applied to convert the transformed text into numerical features.
 
 The dataset was split into training and testing sets.
@@ -42,7 +42,7 @@ Various machine learning algorithms, including Naive Bayes, Decision Tree, Rando
 
 Naive Bayes demonstrated the highest precision among the models.
 
-11. Important details 
+# Important details 
 Data Cleaning:
 Null values in several columns were identified, and the decision was made to remove columns with a significant number of null values.
 Column renaming and label encoding were performed for data clarity and model compatibility.
